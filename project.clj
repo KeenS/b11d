@@ -11,7 +11,7 @@
                  [org.clojure/java.jdbc "0.4.2"]
                  [org.clojure/core.async "0.1.346.0-17112a-alpha"]
                  [org.clojure/math.numeric-tower "0.0.4"]
-                 [mysql/mysql-connector-java "5.1.9"]
+                 [mysql/mysql-connector-java "5.1.37"]
                  [com.mchange/c3p0 "0.9.5.1"]]
   :plugins [[lein-ring "0.8.13"]]
   :ring {:handler b11d.handler/app}
