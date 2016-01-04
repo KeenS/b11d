@@ -45,13 +45,13 @@ CREATE TABLE imps (
 
 CREATE TABLE sites (
   id VARCHAR(255) NOT NULL,
-  site_name VARCHAR(65535) NOT NULL,
+  site_name TEXT NOT NULL,
   PRIMARY KEY(id)
 );
 
 CREATE TABLE pages (
   site_id VARCHAR(255) NOT NULL,
-  page VARCHAR(65535) NOT NULL,
+  page TEXT NOT NULL,
   PRIMARY KEY(site_id),
   FOREIGN KEY(site_id) REFERENCES sites(id) ON UPDATE CASCADE
 );
